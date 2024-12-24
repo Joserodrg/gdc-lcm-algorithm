@@ -1,0 +1,11 @@
+{
+  "name": "mcm-mcd",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node mcm/mcm.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
