@@ -1,0 +1,14 @@
+1. **Descomponer números en factores primos**: Representa cada número como un producto de factores primos. 
+Ejemplo: 84 → \(2^2 \times 3^1 \times 7^1\), 108 → \(2^2 \times 3^3\).
+
+2. **Contar repeticiones de factores**: Identifica cuántas veces aparece cada factor primo en cada número. 
+Ejemplo: 84 → {2: 2, 3: 1, 7: 1}, 108 → {2: 2, 3: 3}.
+
+3. **Encontrar factores comunes**: Busca factores presentes en ambos números. 
+Ejemplo: comunes → 2, 3.
+
+4. **Tomar el menor exponente de los comunes**: De los factores comunes, elige el menor número de repeticiones. 
+Ejemplo: para 2 → \(2^2\), para 3 → \(3^1\).
+
+5. **Multiplicar factores seleccionados**: Multiplica los factores comunes con sus menores exponentes. 
+Ejemplo: \(MCD = 2^2 \times 3^1 = 4 \times 3 = 12\).

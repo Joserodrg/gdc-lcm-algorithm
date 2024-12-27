@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "start": "node mcm/mcm.js"
+    "mcm": "node mcm/mcm.js",
+    "mcd": "node mcd/mcd.js",
+    "pruebas": "node pruebas.js"
+
+
   },
   "author": "",
   "license": "ISC",
