@@ -3,6 +3,7 @@ import { descFactoresPrimos } from "../utils/num-defactor.js";
 import { multiply } from "../utils/multiply.js";
 import { flatten } from "../utils/flatten.js";
 
+
 export function mcm(n1, n2) {
   const n1Primos = group(descFactoresPrimos(n1));
   const n2Primos = group(descFactoresPrimos(n2));
