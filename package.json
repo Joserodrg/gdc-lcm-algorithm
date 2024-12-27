@@ -4,10 +4,7 @@
   "type": "module",
   "scripts": {
     "mcm": "node mcm/mcm.js",
-    "mcd": "node mcd/mcd.js",
-    "pruebas": "node pruebas.js"
-
-
+    "mcd": "node mcd/mcd.js"
   },
   "author": "",
   "license": "ISC",

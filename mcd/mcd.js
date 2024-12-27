@@ -4,15 +4,12 @@ import { multiply } from "../utils/multiply.js";
 import { flatten } from "../utils/flatten.js";
 
 export function mcd(n1, n2) {
-  // Obtener los factores primitos agrupados de cada número
   const n1Primos = group(descFactoresPrimos(n1));
   const n2Primos = group(descFactoresPrimos(n2));
 
-  // Obtener las claves (factores primos) de cada conjunto de factores
   const n1PrimosKeys = Object.keys(n1Primos);
   const n2PrimosKeys = Object.keys(n2Primos);
 
-  // Objeto para almacenar los factores comunes y sus menores exponentes
   const resMcd = {};
 
   // Itero todas las claves de n1Primos.
