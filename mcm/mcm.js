@@ -3,7 +3,6 @@ import { descFactoresPrimos } from "../utils/num-defactor.js";
 import { multiply } from "../utils/multiply.js";
 import { flatten } from "../utils/flatten.js";
 
-
 export function mcm(n1, n2) {
   const n1Primos = group(descFactoresPrimos(n1));
   const n2Primos = group(descFactoresPrimos(n2));
@@ -12,13 +11,13 @@ export function mcm(n1, n2) {
 
   // Busco las claves de los objetos en n1Primos y n2Primos es decir:
   // '{2:}'
-  const n1PrimosKeys = Object.keys(n1Primos); 
+  const n1PrimosKeys = Object.keys(n1Primos);
   const n2PrimosKeys = Object.keys(n2Primos);
 
   // Agregar los factores primos de n1
   // Iteramos todos los elementos del objeto n1PrimosKey.
   for (let i = 0; i < n1PrimosKeys.length; i++) {
-    // Creamos la constante currentKey añadiendole 
+    // Creamos la constante currentKey añadiendole
     // todos los elementos de n1PrimosKeys iterados actualmente.
     const currentKey = n1PrimosKeys[i];
     // creamos currentValue para añadir todos los valores de los objetos de n1Primos.
@@ -32,7 +31,7 @@ export function mcm(n1, n2) {
     for (let j = 0; j < currentValue.length; j++) {
       // Añadimos en la variable resultante con la clave, el currentValue iterado.
       resMcm[currentKey].push(currentValue[j]);
-      console.log(resMcm)
+      console.log(resMcm);
     }
   }
 
@@ -56,12 +55,12 @@ export function mcm(n1, n2) {
       // Dentro del bucle creo un condicional el cual dónde con el '.length'
       // i la cantidad de veces que aparece el factor primo en `currentValue`
       // (representada por `currentValue.length`) es mayor que la cantidad almacenada
-      // en `resMcm[currentKey].length` 
+      // en `resMcm[currentKey].length`
       // (es decir, el exponente actual en el resultado).
       if (currentValue.length > resMcm[currentKey].length) {
         // Entonces si cumple la condición actualizamos el resultado.
         resMcm[currentKey] = currentValue; // ---> Ya que buscamos el exponenete del factor
-                                          //--- primo |más elevado|
+        //--- primo |más elevado|
       }
     }
   }
